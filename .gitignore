@@ -1,4 +1,4 @@
 # Distribuição
 dist/
 build/
-*.egg-info/
+checknet.egg-info/
