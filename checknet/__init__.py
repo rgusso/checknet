@@ -2,15 +2,15 @@ import socket
 
 def is_connected(host="8.8.8.8", port=53, timeout=3):
     """
-    Testa a conectividade com a internet via socket TCP.
+    Tests internet connectivity using a TCP socket.
     
     Args:
-        host (str): Endereço IP para testar (padrão: 8.8.8.8)
-        port (int): Porta TCP (padrão: 53)
-        timeout (int): Tempo limite da conexão em segundos
+        host (str): IP address to test against (default: 8.8.8.8)
+        port (int): TCP port to use (default: 53)
+        timeout (int): Connection timeout in seconds
 
     Returns:
-        bool: True se a conexão for bem-sucedida, False caso contrário
+        bool: True if the connection is successful, False otherwise
     """
     try:
         socket.setdefaulttimeout(timeout)
